@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="card" id="introCard">
+      <h1>HAPPIEST BIRTHDAY ANGELLLLL 🎂✨</h1>
+      <p>Tap the candle to see your surprise 🎉</p>
+      <div class="cake">
+        <div class="candle" id="candle">
+          <div class="flame"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card hidden" id="mainCard">
+
+      <h2>Your Birthday Card 🎉</h2>
+
+    <div id="message" class="hidden-message">
+      happy birthday, loveee 🎂🤍<br><br>
+      jujur ya, gue bersyukur banget bisa ketemu lo di dunia baru gue ini !! lo bikin hari hari gue lebih ringan, bahkan waktu dunia gue lagi ribet-ribetnya. makasih yaaa krnaa udah dateng buat ngeramein hidup gue, dengerin curhatan gue yang kadang ga penting, dan tetep stay walau gue suka random.<br><br>
+      gue harap di umur baru lo ini, hidup lo makin baik, mimpi-mimpi lo satu persatuu terwujud, dan lo selalu inget kalo lo sepantes itu buat bahagia. jangan terlalu keras sama diri sendiri ya, lo udah hebat banget sejauh ini.<br><br>
+      love uu sm !! 💖✨
+    </div>
+
+      <hr>
+
+      <h3>Buku Tamu 💌</h3>
+      <form id="guestForm">
+        <input type="text" id="name" placeholder="Nama kamu" required>
+        <textarea id="wish" placeholder="Tulis ucapan..." required></textarea>
+        <button type="submit">Kirim 🎈</button>
+      </form>
+
+      <div id="guestbook"></div>
+
+    </div>
+
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="music/happy-birthday.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
