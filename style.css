@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #FDEFF9, #ECE9F9);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+h1, h2, h3 {
+  color: #FF4D6D;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 12px;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* CAKE + CANDLE */
+.cake {
+  width: 180px;
+  height: 120px;
+  background: #FF9AA2;
+  margin: 10px auto;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+}
+
+.candle {
+  width: 20px;
+  height: 60px;
+  background: #FFF;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.flame {
+  width: 18px;
+  height: 18px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  animation: flicker 0.3s infinite alternate;
+}
+
+@keyframes flicker {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+
+input, textarea {
+  width: calc(100% - 14px);
+  padding: 7px;
+  margin-top: 8px;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 18px;
+  background: #FF4D6D;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#guestbook {
+  margin-top: 18px;
+}
+
+.guest-item {
+  background: #FFE4EC;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 8px;
+}
